@@ -48,7 +48,7 @@
 	<title>Mean</title>
 </svelte:head>
 
-<div class="content">
+<div>
 	<form on:change={render_graph}>
 		<div>
 			<select bind:value={test_side} name="">
@@ -80,4 +80,4 @@
 	</form>
 </div>
 
-<canvas bind:this={canvas} height={260} width={640}/>
+<canvas class="bg-light-background" bind:this={canvas} height={260} width={640}/>

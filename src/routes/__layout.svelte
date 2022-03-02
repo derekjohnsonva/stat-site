@@ -5,6 +5,6 @@
 
 <Header />
 
-<main>
+<main class="bg-light-background">
 	<slot />
 </main>

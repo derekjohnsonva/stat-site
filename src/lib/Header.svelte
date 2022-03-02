@@ -7,15 +7,14 @@
 	];
 </script>
 
-<header class="p-9">
+<header class="p-9 pb-0 border-b-2 border-black">
 	<div class="mr-20">
 		<h1 class="text-5xl font-medium mb-8">One Population Hypothesis Test</h1>
 	</div>
-	<nav class="flex sm:justify-center space-x-4">
+	<nav class="flex space-x-4 boarder max-w-xl border-black justify-between">
 		{#each pages as {name, path}}
 		<!-- TODO: Determine why text color is not working -->
-		{console.log(page.path)}
-			<a class={`text-3xl ${page.url === path ? 'text-gray-900' : 'text-gray-600'}`} href={path}>{name}</a>
+			<a class={`text-3xl  py-3 border-b-4 border-transparent hover:border-black ${$page.url.pathname === path ? '' : 'text-gray-500'}`} href={path}>{name}</a>
 		{/each}
 	</nav>
 </header>
